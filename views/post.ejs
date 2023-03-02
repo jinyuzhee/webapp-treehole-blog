@@ -1,0 +1,17 @@
+<%- include("partials/header"); -%>
+<main class="container my-5">
+
+    <div class="col-md-8">
+      <h1><%= pageTitle %></h1>
+      <div class="post-date"><%= postDate.toDateString() %></div>
+      <p><%= content %></p>
+    </div>
+  
+    <div class="col-md-8">
+      <div class="post-image imgInPost"></div>
+    </div>
+  
+  </main>
+  
+
+    <%- include("partials/footer"); -%>

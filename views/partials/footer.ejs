@@ -1,0 +1,22 @@
+
+<div class="footer-padding"></div>
+  <div class="footer">
+    <p>Made with ❤️ by Kim</p>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-ZrC5b5E5ek5Zpm9zHk9YcKjzJoMbzoihiFbV7aGoyc/Eh3qjN2OaDk7XuYYzLi/1" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha384-6J+aN/WsLvI8s1zjYHzGCEtTzT2BH99+KaKcMbyrQZ0rE3x8/M/9XfOa05MFnalM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script>
+// Generate a random image URL for each post
+document.querySelectorAll(".post-image").forEach((postImage) => {
+  const randomIndex = Math.floor(Math.random() * 1000); // generate a random number between 0 and 999
+  postImage.style.backgroundImage = `url(https://picsum.photos/600/400?random=${randomIndex})`;
+});
+
+</script>
+
+</body>
+</html>

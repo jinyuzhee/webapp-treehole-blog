@@ -1,0 +1,46 @@
+<%- include("partials/header"); -%>
+<main class="container my-5">
+  <h1 class="mt-5"><%= pageTitle %></h1>
+  <p class="lead"><%= startingContent %></p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <% if (success === true) { %>
+        <div class="alert alert-success" role="alert">
+          Your message has been sent successfully.
+        </div>
+      <% } else if (success === false) { %>
+        <div class="alert alert-danger" role="alert">
+          Failed to send your message. Please try again later.
+        </div>
+      <% } %>
+
+      <form class="contact-form" action="/contact" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary publishBtn">Submit</button>
+      </form>
+
+    </div>
+    <div class="contact-info col-md-6">
+        <h4>Contact Information</h4>
+        <ul class="list contact-info-ul">
+          <li><i class="bi bi-geo-alt-fill"></i> <span>Ireland</span></li>
+          <li><i class="bi bi-envelope-fill"></i> <a href="mailto:jinyuzhee@gmail.com">jinyuzhee@gmail.com</a></li>
+        </ul>
+      </div>
+  </div>
+</div>
+</main>
+
+<%- include("partials/footer"); -%>
