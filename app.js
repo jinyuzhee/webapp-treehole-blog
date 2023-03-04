@@ -30,7 +30,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   Post.find({})
+    
     .then(posts => {
+      posts.sort((a, b) => b.date - a.date);
       res.render("home", {
         pageTitle: "Intro", startingContent: homeStartingContent, posts: posts
       });
@@ -111,8 +113,6 @@ app.post('/contact', (req, res) => {
       res.render('contact', { success: false, pageTitle: "Contact", startingContent: contactContent });
     });
 });
-
-
 
 
 app.listen(3000, function() {

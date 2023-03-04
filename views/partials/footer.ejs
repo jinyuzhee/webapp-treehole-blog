@@ -1,3 +1,6 @@
+<div class="loading">
+  <div class="loading-spinner"></div>
+</div>
 
 <div class="footer-padding"></div>
   <div class="footer">
@@ -16,6 +19,17 @@ document.querySelectorAll(".post-image").forEach((postImage) => {
   postImage.style.backgroundImage = `url(https://picsum.photos/600/400?random=${randomIndex})`;
 });
 
+ // Show loading spinner when the page is loading
+ document.addEventListener('DOMContentLoaded', () => {
+    const loadingSpinner = document.querySelector('.loading');
+    loadingSpinner.style.display = 'flex';
+  });
+
+  // Hide loading spinner when the page has finished loading
+  window.addEventListener('load', () => {
+    const loadingSpinner = document.querySelector('.loading');
+    loadingSpinner.style.display = 'none';
+  });
 </script>
 
 </body>
