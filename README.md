@@ -10,5 +10,5 @@
   <li>Responsive design for easy viewing on mobile devices.</li>
 </ul>
 
-<img src="https://static.wixstatic.com/media/dcaec5_8f88050e2856485e92583fb61de87fc8~mv2.gif" alt="Example GIF" width="300" height="200">
+<img src="https://static.wixstatic.com/media/dcaec5_8f88050e2856485e92583fb61de87fc8~mv2.gif" alt="Example GIF">
 
