@@ -10,5 +10,4 @@
   <li>Responsive design for easy viewing on mobile devices.</li>
 </ul>
 
-<img src="https://static.wixstatic.com/media/dcaec5_8f88050e2856485e92583fb61de87fc8~mv2.gif" alt="Example GIF">
-
+![blog (1)](https://user-images.githubusercontent.com/112444255/224077268-7cf0f08b-7e22-42f1-9914-1bebe1df43ca.gif)
